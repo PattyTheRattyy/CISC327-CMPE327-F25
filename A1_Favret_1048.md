@@ -43,12 +43,11 @@ Group/Section: 001
 
 ### calculate_late_fee.py:
 
-- 2 positive tests
-- 3 negative tests
-- tests with valid inputs twice
-- test with short ISBN
-- test with too long of a title
-- test without total copies
+- 3 positive tests
+- 2 negative tests
+- tests with valid inputs and differing amounts of lateness
+- test where book was not actually borrowed
+- test where book does not exist
 
 ### get_patron_status.py:
 
