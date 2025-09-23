@@ -37,9 +37,9 @@ Group/Section: 001
 - 2 positive tests
 - 3 negative tests
 - tests with valid inputs twice
-- test with short ISBN
-- test with too long of a title
-- test without total copies
+- test when patron has too many borrowed books
+- test when book does not exist
+- test when book has no available copies
 
 ### calculate_late_fee.py:
 
