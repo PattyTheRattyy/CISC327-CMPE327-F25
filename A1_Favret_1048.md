@@ -51,21 +51,23 @@ Group/Section: 001
 
 ### get_patron_status.py:
 
-- 2 positive tests
-- 3 negative tests
-- tests with valid inputs twice
-- test with short ISBN
-- test with too long of a title
-- test without total copies
+- 3 positive tests
+- 2 negative tests
+- tests patron that has never borrowed
+- tests patron that has no fees
+- tests patron that has fees
+- tests with patron ID that does not exist
+- tests with an invalid format for the patron ID
 
 ### return_book.py:
 
-- 2 positive tests
-- 3 negative tests
-- tests with valid inputs twice
-- test with short ISBN
-- test with too long of a title
-- test without total copies
+- 3 positive tests
+- 2 negative tests
+- tests returning a book that was borrowed
+- tests returning a book that was not borrowed
+- tests returning a book and updating available copies
+- tests returning a book and calculating late fees
+- tests returning a book by a patron that does not exist
 
 ### search_books.py:
 
