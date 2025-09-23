@@ -71,9 +71,10 @@ Group/Section: 001
 
 ### search_books.py:
 
-- 2 positive tests
-- 3 negative tests
-- tests with valid inputs twice
-- test with short ISBN
-- test with too long of a title
-- test without total copies
+- 3 positive tests
+- 2 negative tests
+- tests search with exact ISBN
+- tests search for book that does not exist
+- tests search with invalid format
+- tests search with partial title
+- tests search with partial author
