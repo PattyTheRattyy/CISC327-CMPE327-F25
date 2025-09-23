@@ -22,3 +22,57 @@ Group/Section: 001
 |                             |                       |                                                                                                                                                  |
 
 # Summary of Test Scripts:
+
+### add_book.py:
+
+- 2 positive tests
+- 3 negative tests
+- tests with valid inputs twice
+- test with short ISBN
+- test with too long of a title
+- test without total copies
+
+### borrow_book.py:
+
+- 2 positive tests
+- 3 negative tests
+- tests with valid inputs twice
+- test with short ISBN
+- test with too long of a title
+- test without total copies
+
+### calculate_late_fee.py:
+
+- 2 positive tests
+- 3 negative tests
+- tests with valid inputs twice
+- test with short ISBN
+- test with too long of a title
+- test without total copies
+
+### get_patron_status.py:
+
+- 2 positive tests
+- 3 negative tests
+- tests with valid inputs twice
+- test with short ISBN
+- test with too long of a title
+- test without total copies
+
+### return_book.py:
+
+- 2 positive tests
+- 3 negative tests
+- tests with valid inputs twice
+- test with short ISBN
+- test with too long of a title
+- test without total copies
+
+### search_books.py:
+
+- 2 positive tests
+- 3 negative tests
+- tests with valid inputs twice
+- test with short ISBN
+- test with too long of a title
+- test without total copies
