@@ -1,8 +1,7 @@
 {% extends "base.html" %} {% block content %}
-<h2>↩️ Return Book</h2>
-<p>Return a borrowed book to the library.</p>
+<h2>Get Patron Status</h2>
 
-<form method="POST" action="{{ url_for('borrowing.return_book') }}">
+<form method="POST" action="{{ url_for('catalog.patron_status') }}">
   <div class="form-group">
     <label for="patron_id">Patron ID *</label>
     <input
@@ -18,20 +17,7 @@
   </div>
 
   <div class="form-group">
-    <label for="book_id">Book ID *</label>
-    <input
-      type="number"
-      id="book_id"
-      name="book_id"
-      min="1"
-      required
-      value="{{ request.form.book_id if request.form.book_id else '' }}"
-    />
-    <small style="color: #666">The ID of the book you want to return</small>
-  </div>
-
-  <div class="form-group">
-    <button type="submit" class="btn btn-success">Process Return</button>
+    <button type="submit" class="btn btn-success">Get Status</button>
     <a
       href="{{ url_for('catalog.catalog') }}"
       class="btn"
@@ -40,5 +26,7 @@
     >
   </div>
 </form>
+
+<!-- display patron status -->
 
 {% endblock %}
